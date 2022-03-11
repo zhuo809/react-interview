@@ -77,7 +77,10 @@ const MovieCard = () => {
   const handleDeleteConfirm = () => {
     if (deleteFilmId && deleteFilmId > 0) {
       const newFilms = films.filter((f) => f.id !== deleteFilmId);
+      const cats = newFilms.map((r) => r.category);
+      const catsFil = [...new Set(cats)];
       setFilms(newFilms);
+      setCategories(catsFil);
     }
     setDeleteDialog(false);
   };
