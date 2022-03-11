@@ -1,28 +1,22 @@
 import React, { useState, useEffect } from "react";
 import {
-  Button,
   Card,
   CardMedia,
-  CardContent,
   Checkbox,
   CardActions,
   CardHeader,
   Grid,
   Container,
   FormControl,
-  FormControlLabel,
-  RadioGroup,
   OutlinedInput,
   ListItemText,
   Select,
   MenuItem,
   InputLabel,
-  Radio,
   Stack,
   IconButton,
   Skeleton,
   TablePagination,
-  Typography,
 } from "@mui/material";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ThumbDownIcon from "@mui/icons-material/ThumbDown";
